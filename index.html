@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collage Maker</title>
+<link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+<div class="container">
+  <h1>Collage Maker</h1>
+  <label for="image-upload">Select Photos: Use ctrl/Cmd to select photos</label>
+  <input type="file" id="image-upload" accept="image/*" multiple>
+  <br>
+  <label for="collage-options" class="left-align">Collage Options:</label> <!-- Add class for left alignment -->
+  <select id="collage-options">
+    <option value="grid">Grid</option>
+    <option value="horizontal">Horizontal</option>
+    <option value="vertical">Vertical</option>
+    <!--<option value="random">Random</option>-->
+  </select>
+  <br>
+  <button onclick="generateCollage()">Generate Collage</button>
+  <div id="collage-result"></div>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
+
